@@ -7,10 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "GraphView.h"
 
 @interface ViewController ()
-@property (nonatomic,weak) GraphView* myGraph;
 @end
 
 @implementation ViewController
@@ -27,20 +25,50 @@
     UITapGestureRecognizer* doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)];
     doubleTapGesture.numberOfTapsRequired = 2;
     
+    UIPanGestureRecognizer* panReco = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    
     
     [v addGestureRecognizer:tapGesture];
     [v addGestureRecognizer:doubleTapGesture];
+    [v addGestureRecognizer:panReco];
     [tapGesture requireGestureRecognizerToFail:doubleTapGesture];
     
     [self.view addSubview:v];
-    
+    /*
     GraphView* graph = [[GraphView alloc] initWithFrame:CGRectMake(10, 200, CGRectGetWidth(self.view.frame)-20, 200)];
-    
+    graph.backgroundColor = [UIColor lightGrayColor];
+   
     _myGraph = graph;
     
     [self.view addSubview:graph];
+    */
     
     
+    
+    
+}
+
+- (void) pan:(UIPanGestureRecognizer*) recognizer {
+    
+    CGPoint point = [recognizer translationInView:self.view];
+    
+    static CGPoint center;
+    
+    switch(recognizer.state) {
+            
+        case UIGestureRecognizerStateBegan: {
+            center = recognizer.view.center;
+            break;
+        }
+        case UIGestureRecognizerStateChanged: {
+            recognizer.view.center = CGPointMake(point.x + center.x, point.y + center.y);
+            break;
+        }
+        
+        default:
+            break;
+            
+    }
     
 }
 
@@ -52,11 +80,16 @@
     NSLog(@"DoubleTap");
 }
 
+- (IBAction)stepperChanged:(UIStepper *)sender {
+    _myGraph.amp = sender.value;
+    _amplitudeLabel.text = [NSString stringWithFormat:@"%d",_myGraph.amp];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)stepperChanged:(UIStepper *)sender {
-}
+
 @end

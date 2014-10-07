@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GraphView.h"
+
 
 @interface ViewController : UIViewController
 
 - (IBAction)stepperChanged:(UIStepper *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *amplitudeLabel;
+@property (nonatomic,weak)  IBOutlet GraphView* myGraph;
 
 @end
 

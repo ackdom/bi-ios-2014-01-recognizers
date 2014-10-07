@@ -20,6 +20,17 @@
     return self;
 }
 
+- (void)awakeFromNib {
+    _amp = 1;
+    
+}
+
+- (void)setAmp:(NSUInteger)amp {
+    _amp = amp;
+    [self setNeedsDisplay];
+}
+
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
@@ -27,11 +38,15 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
+    //nasledujici 2 radky "neexistuji"
+    //[[UIColor blackColor] setFill];
+    //CGContextFillRect(context, self.bounds);
+
+    
     CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
     CGContextSetLineWidth(context, 1);
     CGContextSetFillColorWithColor(context, [UIColor greenColor].CGColor);
     
-    // CGContextFillRect(context, CGRectMake(, 8, 100, 100));
     //[[UIColor whiteColor] setFill]; // setStroke
     
     
