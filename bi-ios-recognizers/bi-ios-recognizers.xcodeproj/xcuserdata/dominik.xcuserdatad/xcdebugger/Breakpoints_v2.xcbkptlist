@@ -26,11 +26,25 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bi-ios-recognizers/GraphView.m"
-            timestampString = "434357271.121675"
+            timestampString = "434361883.381201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "78"
+            endingLineNumber = "78">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bi-ios-recognizers/GraphView.m"
+            timestampString = "434361883.381201"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "-drawRect:"
             landmarkType = "5">
          </BreakpointContent>

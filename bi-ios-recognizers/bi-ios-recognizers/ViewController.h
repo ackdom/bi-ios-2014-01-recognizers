@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)stepperChanged:(UIStepper *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *amplitudeLabel;
 
 @end
 

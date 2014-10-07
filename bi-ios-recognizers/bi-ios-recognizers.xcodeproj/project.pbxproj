@@ -14,6 +14,7 @@
 		B470D78A19E3B81200CFFD98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B470D78919E3B81200CFFD98 /* Images.xcassets */; };
 		B470D78D19E3B81200CFFD98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B470D78B19E3B81200CFFD98 /* LaunchScreen.xib */; };
 		B470D79919E3B81200CFFD98 /* bi_ios_recognizersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B470D79819E3B81200CFFD98 /* bi_ios_recognizersTests.m */; };
+		B470D7A719E3D0CF00CFFD98 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = B470D7A619E3D0CF00CFFD98 /* GraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B470D79219E3B81200CFFD98 /* bi-ios-recognizersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bi-ios-recognizersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B470D79719E3B81200CFFD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B470D79819E3B81200CFFD98 /* bi_ios_recognizersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bi_ios_recognizersTests.m; sourceTree = "<group>"; };
+		B470D7A519E3D0CF00CFFD98 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		B470D7A619E3D0CF00CFFD98 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				B470D78919E3B81200CFFD98 /* Images.xcassets */,
 				B470D78B19E3B81200CFFD98 /* LaunchScreen.xib */,
 				B470D77C19E3B81200CFFD98 /* Supporting Files */,
+				B470D7A519E3D0CF00CFFD98 /* GraphView.h */,
+				B470D7A619E3D0CF00CFFD98 /* GraphView.m */,
 			);
 			path = "bi-ios-recognizers";
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				B470D78519E3B81200CFFD98 /* ViewController.m in Sources */,
 				B470D78219E3B81200CFFD98 /* AppDelegate.m in Sources */,
 				B470D77F19E3B81200CFFD98 /* main.m in Sources */,
+				B470D7A719E3D0CF00CFFD98 /* GraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +418,7 @@
 				B470D79E19E3B81200CFFD98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B470D79F19E3B81200CFFD98 /* Build configuration list for PBXNativeTarget "bi-ios-recognizersTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				B470D7A119E3B81200CFFD98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
