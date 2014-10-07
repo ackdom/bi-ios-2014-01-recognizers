@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B470D77F19E3B81200CFFD98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B470D77E19E3B81200CFFD98 /* main.m */; };
+		B470D78219E3B81200CFFD98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B470D78119E3B81200CFFD98 /* AppDelegate.m */; };
+		B470D78519E3B81200CFFD98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B470D78419E3B81200CFFD98 /* ViewController.m */; };
+		B470D78819E3B81200CFFD98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B470D78619E3B81200CFFD98 /* Main.storyboard */; };
+		B470D78A19E3B81200CFFD98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B470D78919E3B81200CFFD98 /* Images.xcassets */; };
+		B470D78D19E3B81200CFFD98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B470D78B19E3B81200CFFD98 /* LaunchScreen.xib */; };
+		B470D79919E3B81200CFFD98 /* bi_ios_recognizersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B470D79819E3B81200CFFD98 /* bi_ios_recognizersTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B470D79319E3B81200CFFD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B470D77119E3B81200CFFD98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B470D77819E3B81200CFFD98;
+			remoteInfo = "bi-ios-recognizers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B470D77919E3B81200CFFD98 /* bi-ios-recognizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bi-ios-recognizers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B470D77D19E3B81200CFFD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B470D77E19E3B81200CFFD98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B470D78019E3B81200CFFD98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B470D78119E3B81200CFFD98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B470D78319E3B81200CFFD98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B470D78419E3B81200CFFD98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B470D78719E3B81200CFFD98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B470D78919E3B81200CFFD98 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B470D78C19E3B81200CFFD98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B470D79219E3B81200CFFD98 /* bi-ios-recognizersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bi-ios-recognizersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B470D79719E3B81200CFFD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B470D79819E3B81200CFFD98 /* bi_ios_recognizersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bi_ios_recognizersTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B470D77619E3B81200CFFD98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B470D78F19E3B81200CFFD98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B470D77019E3B81200CFFD98 = {
+			isa = PBXGroup;
+			children = (
+				B470D77B19E3B81200CFFD98 /* bi-ios-recognizers */,
+				B470D79519E3B81200CFFD98 /* bi-ios-recognizersTests */,
+				B470D77A19E3B81200CFFD98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B470D77A19E3B81200CFFD98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B470D77919E3B81200CFFD98 /* bi-ios-recognizers.app */,
+				B470D79219E3B81200CFFD98 /* bi-ios-recognizersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B470D77B19E3B81200CFFD98 /* bi-ios-recognizers */ = {
+			isa = PBXGroup;
+			children = (
+				B470D78019E3B81200CFFD98 /* AppDelegate.h */,
+				B470D78119E3B81200CFFD98 /* AppDelegate.m */,
+				B470D78319E3B81200CFFD98 /* ViewController.h */,
+				B470D78419E3B81200CFFD98 /* ViewController.m */,
+				B470D78619E3B81200CFFD98 /* Main.storyboard */,
+				B470D78919E3B81200CFFD98 /* Images.xcassets */,
+				B470D78B19E3B81200CFFD98 /* LaunchScreen.xib */,
+				B470D77C19E3B81200CFFD98 /* Supporting Files */,
+			);
+			path = "bi-ios-recognizers";
+			sourceTree = "<group>";
+		};
+		B470D77C19E3B81200CFFD98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B470D77D19E3B81200CFFD98 /* Info.plist */,
+				B470D77E19E3B81200CFFD98 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B470D79519E3B81200CFFD98 /* bi-ios-recognizersTests */ = {
+			isa = PBXGroup;
+			children = (
+				B470D79819E3B81200CFFD98 /* bi_ios_recognizersTests.m */,
+				B470D79619E3B81200CFFD98 /* Supporting Files */,
+			);
+			path = "bi-ios-recognizersTests";
+			sourceTree = "<group>";
+		};
+		B470D79619E3B81200CFFD98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B470D79719E3B81200CFFD98 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B470D77819E3B81200CFFD98 /* bi-ios-recognizers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B470D79C19E3B81200CFFD98 /* Build configuration list for PBXNativeTarget "bi-ios-recognizers" */;
+			buildPhases = (
+				B470D77519E3B81200CFFD98 /* Sources */,
+				B470D77619E3B81200CFFD98 /* Frameworks */,
+				B470D77719E3B81200CFFD98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bi-ios-recognizers";
+			productName = "bi-ios-recognizers";
+			productReference = B470D77919E3B81200CFFD98 /* bi-ios-recognizers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B470D79119E3B81200CFFD98 /* bi-ios-recognizersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B470D79F19E3B81200CFFD98 /* Build configuration list for PBXNativeTarget "bi-ios-recognizersTests" */;
+			buildPhases = (
+				B470D78E19E3B81200CFFD98 /* Sources */,
+				B470D78F19E3B81200CFFD98 /* Frameworks */,
+				B470D79019E3B81200CFFD98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B470D79419E3B81200CFFD98 /* PBXTargetDependency */,
+			);
+			name = "bi-ios-recognizersTests";
+			productName = "bi-ios-recognizersTests";
+			productReference = B470D79219E3B81200CFFD98 /* bi-ios-recognizersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B470D77119E3B81200CFFD98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Ackee s.r.o.";
+				TargetAttributes = {
+					B470D77819E3B81200CFFD98 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B470D79119E3B81200CFFD98 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B470D77819E3B81200CFFD98;
+					};
+				};
+			};
+			buildConfigurationList = B470D77419E3B81200CFFD98 /* Build configuration list for PBXProject "bi-ios-recognizers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B470D77019E3B81200CFFD98;
+			productRefGroup = B470D77A19E3B81200CFFD98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B470D77819E3B81200CFFD98 /* bi-ios-recognizers */,
+				B470D79119E3B81200CFFD98 /* bi-ios-recognizersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B470D77719E3B81200CFFD98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B470D78819E3B81200CFFD98 /* Main.storyboard in Resources */,
+				B470D78D19E3B81200CFFD98 /* LaunchScreen.xib in Resources */,
+				B470D78A19E3B81200CFFD98 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B470D79019E3B81200CFFD98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B470D77519E3B81200CFFD98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B470D78519E3B81200CFFD98 /* ViewController.m in Sources */,
+				B470D78219E3B81200CFFD98 /* AppDelegate.m in Sources */,
+				B470D77F19E3B81200CFFD98 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B470D78E19E3B81200CFFD98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B470D79919E3B81200CFFD98 /* bi_ios_recognizersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B470D79419E3B81200CFFD98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B470D77819E3B81200CFFD98 /* bi-ios-recognizers */;
+			targetProxy = B470D79319E3B81200CFFD98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B470D78619E3B81200CFFD98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B470D78719E3B81200CFFD98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B470D78B19E3B81200CFFD98 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B470D78C19E3B81200CFFD98 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B470D79A19E3B81200CFFD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B470D79B19E3B81200CFFD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B470D79D19E3B81200CFFD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "bi-ios-recognizers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B470D79E19E3B81200CFFD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "bi-ios-recognizers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B470D7A019E3B81200CFFD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bi-ios-recognizersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bi-ios-recognizers.app/bi-ios-recognizers";
+			};
+			name = Debug;
+		};
+		B470D7A119E3B81200CFFD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bi-ios-recognizersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bi-ios-recognizers.app/bi-ios-recognizers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B470D77419E3B81200CFFD98 /* Build configuration list for PBXProject "bi-ios-recognizers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B470D79A19E3B81200CFFD98 /* Debug */,
+				B470D79B19E3B81200CFFD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B470D79C19E3B81200CFFD98 /* Build configuration list for PBXNativeTarget "bi-ios-recognizers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B470D79D19E3B81200CFFD98 /* Debug */,
+				B470D79E19E3B81200CFFD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B470D79F19E3B81200CFFD98 /* Build configuration list for PBXNativeTarget "bi-ios-recognizersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B470D7A019E3B81200CFFD98 /* Debug */,
+				B470D7A119E3B81200CFFD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B470D77119E3B81200CFFD98 /* Project object */;
+}
