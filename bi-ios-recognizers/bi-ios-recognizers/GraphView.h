@@ -10,6 +10,6 @@
 
 @interface GraphView : UIView
 
-@property (nonatomic,assign) NSUInteger amp;
+@property (nonatomic,assign) CGFloat amp;
 
 @end

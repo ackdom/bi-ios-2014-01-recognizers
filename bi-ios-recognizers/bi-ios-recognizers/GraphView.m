@@ -15,6 +15,7 @@
     self = [super initWithFrame:frame];
     if(self) {
         _amp = 1;
+        self.backgroundColor = [UIColor lightGrayColor];
     }
     
     return self;
@@ -25,7 +26,7 @@
     
 }
 
-- (void)setAmp:(NSUInteger)amp {
+- (void)setAmp:(CGFloat)amp {
     _amp = amp;
     [self setNeedsDisplay];
 }
@@ -36,25 +37,15 @@
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    //nasledujici 2 radky "neexistuji"
-    //[[UIColor blackColor] setFill];
-    //CGContextFillRect(context, self.bounds);
-
-    
     CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
-    CGContextSetLineWidth(context, 1);
-    CGContextSetFillColorWithColor(context, [UIColor greenColor].CGColor);
-    
-    //[[UIColor whiteColor] setFill]; // setStroke
-    
+    CGContextSetLineWidth(context, 2);
     
     CGContextMoveToPoint(context, 0, CGRectGetHeight(self.bounds) / 2.0);
-    for (double i = 0; i < CGRectGetWidth(self.frame); i += 2) {
-        
-        int y = self.amp * 20 * sinf(i) + CGRectGetHeight(self.bounds) / 2.0;
-        CGContextAddLineToPoint(context, i, y);
+    for (NSInteger i = 0; i < 900; i += 4) {
+        CGContextAddLineToPoint(context, i, self.amp * 10* sinf(i) + CGRectGetHeight(self.bounds) / 2.0);
     }
     
     CGContextStrokePath(context);

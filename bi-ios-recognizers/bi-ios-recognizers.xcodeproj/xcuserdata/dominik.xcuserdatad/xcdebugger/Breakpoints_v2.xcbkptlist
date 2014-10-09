@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bi-ios-recognizers/GraphView.m"
-            timestampString = "434363156.694922"
+            timestampString = "434481222.599698"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93">
+            startingLineNumber = "84"
+            endingLineNumber = "84">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -40,12 +40,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bi-ios-recognizers/GraphView.m"
-            timestampString = "434363156.694922"
+            timestampString = "434481164.58319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "-drawRect:"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-setAmp:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -55,13 +55,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "bi-ios-recognizers/GraphView.m"
-            timestampString = "434363171.754001"
+            filePath = "bi-ios-recognizers/ViewController.m"
+            timestampString = "434482063.754129"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-setAmp:"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "-panelView:sliderChanged:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

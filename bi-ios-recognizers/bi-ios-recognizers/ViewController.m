@@ -9,15 +9,16 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) GraphView *chartView;
+@property (strong, nonatomic) PanelView *panelView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    UIView* v = [[UIView alloc] initWithFrame:CGRectMake(10, 20, 100, 100)];
+    UIView* v = [[UIView alloc] initWithFrame:CGRectMake(10, 400, 100, 100)];
     v.backgroundColor = [UIColor redColor];
     
     UITapGestureRecognizer* tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(oneTap:)];
@@ -32,21 +33,41 @@
     [v addGestureRecognizer:doubleTapGesture];
     [v addGestureRecognizer:panReco];
     [tapGesture requireGestureRecognizerToFail:doubleTapGesture];
-    
-    [self.view addSubview:v];
-    /*
-    GraphView* graph = [[GraphView alloc] initWithFrame:CGRectMake(10, 200, CGRectGetWidth(self.view.frame)-20, 200)];
-    graph.backgroundColor = [UIColor lightGrayColor];
    
-    _myGraph = graph;
     
-    [self.view addSubview:graph];
-    */
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    GraphView *chartView = [[GraphView alloc] initWithFrame:CGRectZero];
+    chartView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    
+   // UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panRecognized:)];
+   // [chartView addGestureRecognizer:recognizer];
+    
+    [self.view addSubview:chartView];
+    self.chartView = chartView;
+    
+    PanelView *panelview = [[PanelView alloc] initWithFrame:CGRectZero];
+    panelview.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    panelview.delegate = self;
+    [self.view addSubview:panelview];
+    self.panelView = panelview;
     
     
-    
-    
+    //pridam view
+    [self.view addSubview:v];
+
+ 
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.chartView.frame = CGRectMake(8, 20 + 8, CGRectGetWidth(self.view.bounds) - 16, 200);
+    self.panelView.frame = CGRectMake(8, 20 + 16 + 200, CGRectGetWidth(self.view.bounds) - 16, 128);
+}
+
+
 
 - (void) pan:(UIPanGestureRecognizer*) recognizer {
     
@@ -80,16 +101,19 @@
     NSLog(@"DoubleTap");
 }
 
-- (IBAction)stepperChanged:(UIStepper *)sender {
-    _myGraph.amp = sender.value;
-    _amplitudeLabel.text = [NSString stringWithFormat:@"%d",_myGraph.amp];
-    
+
+- (void)panelView:(PanelView *)panelView stepperValueChanged:(UIStepper *)slider {
+    self.chartView.amp = slider.value;
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)panelView:(PanelView *)panelView sliderChanged:(UISlider *)slider
+{
+   
+    self.chartView.amp = slider.value;
 }
+
+
 
 
 @end
